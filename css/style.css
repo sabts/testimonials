@@ -20,16 +20,96 @@ nav ul{
 }
 body{
     margin: 0;
-    font-family: 'Poppins' ,sans-serif;
-    background-image: radial-gradient(at bottom, #7EF2FF, #1E1E1E);
+    font-family: 'Poppins','Roboto',sans-serif;
+    background-image: radial-gradient(at center bottom, rgb(126 242 255/39%), #1E1E1E);
+    background-color: #1E1E1E;
+    background-size: 400% 400%;
 }
 .title{
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0;
 }
 .title-xl{
     font-size: 3rem;
+    font-family: 'Poppins';
     background-image: linear-gradient(to right,#6131F8, #C140A0,#FC8866 );
     background-clip: text;
+    color: transparent;
+}
+.title-name{
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+    color: #FFF;
+}
+.text{
+    font-weight: 400;
+}
+.text-header{
+    font-family:'Poppins';
+    font-size: 1rem;
+    line-height: normal;
+    color: rgb(255 255 255/ 0.5);
+}
+.button{
+    display: flex;
+    width: 7.5rem;
+    padding: 0rem 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto';
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+}
+.button-primary{
+    background-color:#6A32EF;
+}
+.button-secondary{
+    border: 1px solid #6131F8 ;
+}
+.header{
+    padding-top: 2.8125rem;
+    padding-inline: 1rem;
+    gap: 2.5rem;
+}
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 9.0625rem;
+}
+.top-bar{
+    display: flex;
+    gap: 1.5rem;
+}
+.header-info{
+    display: flex;
+    box-sizing: auto;
+    flex-direction: column;
+}
+@media screen and (width>1024px) {
+    .title-xl{
+        font-size: 3.625rem;
+    }
+    .button{
+        width: 10rem;
+        padding: 0rem 2rem;
+        font-size: 1.5rem;
+    }
+    .header{
+        padding-top: 10rem;
+        padding-inline: 12.125rem;
+    }
+    .header-section{
+        flex-direction: row-reverse;
+        flex-wrap:nowrap;
+        text-align: left;
+        align-items: center;
 
+    }
 }
