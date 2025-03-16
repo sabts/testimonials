@@ -20,5 +20,16 @@ nav ul{
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins' ,sans-serif;
+    background-image: radial-gradient(at bottom, #7EF2FF, #1E1E1E);
+}
+.title{
+    font-weight: 700;
+    line-height: normal;
+}
+.title-xl{
+    font-size: 3rem;
+    background-image: linear-gradient(to right,#6131F8, #C140A0,#FC8866 );
+    background-clip: text;
+
 }
