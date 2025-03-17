@@ -21,9 +21,17 @@ nav ul{
 body{
     margin: 0;
     font-family: 'Poppins','Roboto',sans-serif;
-    background-image: radial-gradient(at center bottom, rgb(126 242 255/39%), #1E1E1E);
     background-color: #1E1E1E;
-    background-size: 400% 400%;
+}
+.background-gradient{
+    size: auto;
+    background-image: radial-gradient(circle at bottom center, #7ef2ff63 20%, #1E1E1E 40%);
+}
+@media screen and (width>1024px) {
+    .background-gradient{
+        background-image: radial-gradient(circle at right, #7ef2ff63 5%, #1E1E1E 25%);
+    }
+       
 }
 .title{
     font-weight: 700;
@@ -44,6 +52,19 @@ body{
 }
 .text{
     font-weight: 400;
+}
+.text-opinion{
+    font-family: 'Roboto';
+    font-size: 1.125rem;
+    color: rgb(255 255 255 /75%);
+    line-height: 1.5rem;
+}
+.text-caption{ 
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: rgb(255 255 255 /50%);
+    line-height: 1.5rem;
+    margin-top: 0%;
 }
 .text-header{
     font-family:'Poppins';
@@ -74,14 +95,13 @@ body{
 .header{
     padding-top: 2.8125rem;
     padding-inline: 1rem;
-    gap: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .header-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    gap: 9.0625rem;
 }
 .top-bar{
     display: flex;
@@ -102,7 +122,7 @@ body{
         font-size: 1.5rem;
     }
     .header{
-        padding-top: 10rem;
+        padding-top: 6.25rem;
         padding-inline: 12.125rem;
     }
     .header-section{
@@ -110,6 +130,49 @@ body{
         flex-wrap:nowrap;
         text-align: left;
         align-items: center;
-
+        gap: 9.0625rem;
     }
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-bottom: 2.8125rem;
+    gap: 2rem;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 21.375rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(33 33 33/ 75%);
+}
+.valoration{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+
+}
+.photo{
+    border-radius: 100%;}
+
+
+ @media screen and (width>1024px){
+        .testimonials{
+            padding-inline: 12.125rem;
+            gap: 5rem;
+            padding-bottom: 6.25rem;
+        }
+        .card-position1{
+            top: 2rem;
+        }
+        .card-position2{
+            top:2.9375rem
+        }
 }
